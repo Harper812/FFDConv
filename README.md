@@ -7,13 +7,13 @@ The official implementation of *Full-frequency dynamic convolution: a physical f
 Code will be released soon!
 
 ## Introduction
-#### Frequency-dependent modeling
+### Frequency-dependent modeling
 *Full-frequency dynamic convolution* (FFDConv) is proposed as the first full-dynamic method in SED. It generates frequency kernels for every frequency band, which is designed directly in the structure for frequency-dependent modeling. FFDConv physically furnished 2D convolution with the capability of frequency-dependent modeling.
 <div align="center">
 <img src="./figure/introduction.jpg" width="500" height="400">
 </div>
 
-#### Fine-grained temporal coherence
+### Fine-grained temporal coherence
 Most SED models are trained in a frame-based supervised way, which always leads to the feature and output being discrete over time. FFDConv can alleviate this by frequency-dependent modeling. Besides, the convolution kernel of FFDConv for a frequency band is shared in all frames, which can produce temporally coherent representations. This is consistent with both the continuity of the sound waveform and the vocal continuity of sound events.
 <div align="center">
 <img src="./figure/feature1.png" width="500" height="500">
