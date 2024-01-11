@@ -1,4 +1,4 @@
-# Full-frequency Dynamic Convolution [![arxiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2203.15296)
+# Full-frequency Dynamic Convolution [![arxiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2401.04976)
 The official implementation of *Full-frequency dynamic convolution: a physical frequency-dependent convolution for sound event detection.* (Submitted to ICME 2024)<br>Authors: Haobo Yue, Zhicheng Zhang, Da Mu, Yonghao Dang, Jianqin Yin, Jin Tang
 
 [Issues :blush:](https://github.com/Harper812/FFDConv/issues) **|** [Lab :clap:](https://github.com/BUPT-COST-lab) **|** [Contact :mailbox:](hby@bupt.edu.cn)  
@@ -10,13 +10,13 @@ Code will be released soon!
 ### Frequency-dependent modeling
 *Full-frequency dynamic convolution* (FFDConv) is proposed as the first full-dynamic method in SED. It generates frequency kernels for every frequency band, which is designed directly in the structure for frequency-dependent modeling. FFDConv physically furnished 2D convolution with the capability of frequency-dependent modeling.
 <div align="center">
-<img src="./figure/introduction.jpg" width="500" height="400">
+<img src="./figure/introduction.jpg" width="400" height="340">
 </div>
 
 ### Fine-grained temporal coherence
 Most SED models are trained in a frame-based supervised way, which always leads to the feature and output being discrete over time. FFDConv can alleviate this by frequency-dependent modeling. Besides, the convolution kernel of FFDConv for a frequency band is shared in all frames, which can produce temporally coherent representations. This is consistent with both the continuity of the sound waveform and the vocal continuity of sound events.
 <div align="center">
-<img src="./figure/feature1.png" width="500" height="500">
+<img src="./figure/feature1.png" width="400" height="400">
 </div>
 
 
@@ -38,10 +38,10 @@ Our code is implemented based on [FDY-SED](https://github.com/frednam93/FDY-SED)
 ## Citation
 If this repository helped your works, please cite papers below! :kissing_heart:
 ```bib
-@article{nam2022freqdynamicconv,
-      title={Frequency Dynamic Convolution: Frequency-Adaptive Pattern Recognition for Sound Event Detection}, 
-      author={Hyeonuk Nam and Seong-Hu Kim and Byeong-Yun Ko and Yong-Hwa Park},
-      journal={arXiv preprint arXiv:2203.15296},
-      year={2022},
+@article{yue2024fullfrequency,
+      title={Full-frequency dynamic convolution: a physical frequency-dependent convolution for sound event detection}, 
+      author={Haobo Yue and Zhicheng Zhang and Da Mu and Yonghao Dang and Jianqin Yin and Jin Tang},
+      journal={arXiv preprint arXiv:2401.04976},
+      year={2024},
 }
 ```
