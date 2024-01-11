@@ -23,7 +23,7 @@ Most SED models are trained in a frame-based supervised way, which always leads 
 ## Performance
 FFDConv is evaluated on [DESED](https://github.com/turpaultn/DESED)
 
-Model                   | PSDS1          | PSDS2          | EB F1            | IB F1
+Model                   | PSDS1          | PSDS2          | EB-F1            | IB-F1
 :----------------------:|:--------------:|:--------------:|:----------------:|:-------------:
 CRNN                    | 0.370          | 0.579          | 0.469            | 0.714
 DDFConv                 | 0.387          | 0.624          | 0.467            | 0.720
