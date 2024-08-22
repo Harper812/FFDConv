@@ -1,10 +1,10 @@
 # Full-frequency Dynamic Convolution [![arxiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2401.04976)
-The official implementation of *Full-frequency dynamic convolution: a physical frequency-dependent convolution for sound event detection.* (Submitted to ICME 2024)<br>Authors: Haobo Yue, Zhicheng Zhang, Da Mu, Yonghao Dang, Jianqin Yin, Jin Tang
+The official implementation of *Full-frequency dynamic convolution: a physical frequency-dependent convolution for sound event detection.* (Accepted by ICPR 2024)<br>Authors: Haobo Yue, Zhicheng Zhang, Da Mu, Yonghao Dang, Jianqin Yin, Jin Tang
 
 [Issues :blush:](https://github.com/Harper812/FFDConv/issues) **|** [Lab :clap:](https://github.com/BUPT-COST-lab) **|** [Contact :mailbox:](hby@bupt.edu.cn)  
 
 ## Updating
-Code will be released soon!
+Code is available now!
 
 ## Introduction
 ### Frequency-dependent modeling
@@ -23,12 +23,15 @@ Most SED models are trained in a frame-based supervised way, which always leads 
 ## Performance
 FFDConv is evaluated on [DESED](https://github.com/turpaultn/DESED)
 
-Model                   | PSDS1          | PSDS2          | EB-F1            | IB-F1
-:----------------------:|:--------------:|:--------------:|:----------------:|:-------------:
-CRNN                    | 0.370          | 0.579          | 0.469            | 0.714
-DDFConv                 | 0.387          | 0.624          | 0.467            | 0.720
-FTDConv                 | 0.395          | 0.651          | 0.495            | 0.740
-FFDConv                 | **0.436**      | **0.685**      | **0.526**        | **0.751**
+Model                   | Params | PSDS1 $\uparrow$| PSDS2 $\uparrow$| EB-F1 $\uparrow$| IB-F1 $\uparrow$
+:----------------------:|:--------------:|:--------------:|:--------------:|:----------------:|:-------------:
+CRNN                    | 4M | 0.370          | 0.579          | 0.469            | 0.714
+DDFConv                 | 7M | 0.387          | 0.624          | 0.467            | 0.720
+FTDConv                 | 7M | 0.395          | 0.651          | 0.495            | <u>0.740</u>
+SKConv                  | -  | 0.400          | -              | 0.520            | -
+FDConv                  | 11M | 0.431          | 0.663          | 0.521            | 0.738
+MFDConv                 | 33M | **0.461**      | <u>0.680</u>   | **0.542**        | -
+FFDConv                 | 11M | <u>0.436</u>   | **0.685**      | <u>0.526</u>     | **0.751**
 
 
 ## Reference
